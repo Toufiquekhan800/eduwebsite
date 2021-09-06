@@ -1,0 +1,884 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(eduford_img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.nav-collection{
+    display: flex;
+    justify-content:space-between;
+    box-sizing: border-box;
+}
+#navbar .logo{
+    margin: 10px 0px 0px 40px;
+    padding: 5px 0px 0px 40px;
+    box-sizing: border-box;
+}
+#navbar .right{
+    padding: 25px 40px 0px 0px;
+    margin: 5px 40px 0px 0px;  
+}
+#navbar .right a{
+    text-decoration: none;
+    padding-right: 20px;
+    margin-right: 10px;
+    color: #fff;
+    font-weight: bolder;
+    position: relative;
+}
+#navbar .openMenu{
+    font-size: 1rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+#navbar  .closeMenu  {
+    display: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+/*---banner/header---*/
+.banner{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50% ;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    color: #fff;
+    padding-top: 30px; ;
+}
+.banner h1{
+    font-size: 80px;
+    margin-bottom: 12px;
+    
+}
+.banner p{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 18px;
+    font-weight: bold;
+    
+}
+.banner .bt{
+    margin-top: 40px;
+}
+.banner .btn{
+    border: 2px solid white;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 18px 20px;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    transition: 0.5s;
+}
+.banner .btn:hover{
+    background-color: #f44336;
+    border: 2px solid #f44336;
+    transition: 1s;
+}
+
+
+/*================= Navbar and banner media qeary=================*/
+
+@media(max-width: 700px) {
+
+    #navbar .right{
+        height: 100vh;
+        width: 100%;
+        position:fixed ;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s;
+        display: none;
+    }
+
+    #navbar  .closeMenu{
+        
+        position:absolute ;
+        top: 20px;
+        right: 20px;
+        color: #fff;
+        z-index: 10;
+        display: none;
+    }
+    #navbar .openMenu{
+        display:block;
+        color: #fff;
+    }
+
+    #navbar .logo{
+        margin: 14px 30px 0px 10px;
+        padding: 5px 30px 0px 10px;
+        box-sizing: border-box;
+    }
+    #navbar .logo img{
+        width: 140px;
+    }
+    .right{
+        position: fixed;
+        width:200px ;
+        height: 100vh;
+        top: 0;
+        right: -200px;
+        background-color: #f44336;
+        padding: 12px;
+        display:none ;
+        
+    }
+    .right a{
+        display: block;
+        padding: 12px;
+    }
+    .nav-collection .fa{
+        display:block ;
+        color: #fff;
+    }
+
+.banner h1{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+.banner p{
+    font-size: 11px;
+    font-weight: 400;
+}
+}
+@media(max-width: 400px){
+    .banner h1{
+        font-size: 30px;
+    }
+}
+
+
+
+/*--course--*/
+#container .headline{
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+#container .headline h2{
+    font-size: 40px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+#container .headline p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #777;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+#container .box{
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 30px;
+    padding-top: 12px;
+    margin-bottom: 60px;
+}
+#container .box .item{
+    width: 330px;
+    height: 200px;
+    background: #fff3f3;
+    margin-left: 29px;
+    margin-right: 29px;
+    padding-bottom: 4px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+#container .box .item h3{
+     padding-top:30px ;
+     padding-bottom: 20px;
+     font-size: 26px;
+     font-weight: 600;
+}
+#container .box .item p{
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 8px;
+    
+}
+#container .box .item:hover{
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/*---media qeary---*/
+@media(max-width: 1060px){
+    #container .box .item{
+        width: 340px;
+        height: 230px;
+        
+    }
+}
+
+@media(max-width: 700px) {
+    #container .headline h2{
+        font-size: 30px;
+    }
+#container .box .item{
+    width: 400px;
+    height: 220px;
+    margin-bottom: 20px;
+}
+#container .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-top: 12px;
+    margin-bottom: 60px;
+}
+}
+
+@media(max-width: 500px) {
+    #container .box .item{
+        width: 330px;
+        height: 190px;
+        margin-bottom: 20px;
+    }
+    #container .box .item p{
+        font-size: 10px;
+        
+    }
+
+    }
+    @media(max-width: 400px) {
+        #container .box .item{
+            width: 260px;
+            height: 170px;
+            margin-bottom: 20px;
+        }
+        }
+
+
+
+
+
+
+
+
+/*---3rd page--campas*/
+#global{
+    margin-top: 90px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+#global h1{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    font-size: 40px;
+    font-weight: 600;
+}
+#global p{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+#global .all-campas {
+    display: flex;
+    justify-content: center;
+    
+    padding-top: 10px;
+}
+#global .all-campas .item{
+    margin: 0 40px;
+    position: relative;
+    border-radius: 12px;
+    text-align: center;
+}
+#global .all-campas .item img{
+    width:312px ;
+    height:390px ;
+    overflow: hidden;
+    border-radius: 12px;
+    display: block;
+}
+.layer{
+    
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;          /*----put layer on img-----*/
+    position: absolute;
+    top:0 ;
+    left:0 ;
+    transition: 0.5s;
+}
+#global .layer:hover{
+    background: rgba(226,0,0,0.6);
+}
+.layer h3{
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform:translate(-50% ) ;
+    transition: 1s;
+}
+.layer:hover h3{
+    top: 30%;
+}
+
+/*---media qeary---*/
+@media(max-width: 1160px){
+    #global .all-campas .item{
+        margin: 0 20px;
+    }
+    #global .all-campas .item img{
+        width:270px ;
+        height:350px ;
+    }
+}
+@media(max-width: 700px) {
+    #global h1{
+        font-size: 30px;
+        font-weight: 600;
+    }
+#global .all-campas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 26px;
+}
+#global .all-campas .item{
+    margin-bottom: 24px;
+}
+#global .all-campas .item img{
+    width:340px ;
+    height:380px ;
+}
+}
+
+@media(max-width: 550px) {
+    #global .all-campas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 26px;
+    }
+    #global .all-campas .item{
+        margin-bottom: 24px;
+    }
+    #global .all-campas .item img{
+        width:230px ;
+        height:290px ;
+    }
+    }
+
+
+
+
+
+
+
+/*----4th page--------facilities------*/
+#facilities {
+    margin: 70px 0;
+}
+#facilities h2{
+    text-align: center;
+    font-size:40px ;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+#facilities p{
+    text-align:center ;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 14px;
+}
+#facilities .facilities-row{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+#facilities .facilities-col{
+    margin: 0 50px; 
+}
+#facilities .facilities-col img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+} 
+#facilities .facilities-col h3{
+    font-size: 22px;   
+    font-weight: 600;
+    text-align: left;
+    padding-top: 14px;
+}
+#facilities .facilities-col p{
+    font-size: 14px;   
+    font-weight: 300;
+    text-align: left;
+    padding-top: 8px;
+}
+
+/*---media qeary---*/
+@media(max-width: 1160px){
+    #facilities .facilities-col{
+        margin: 0 20px; 
+    }
+    #facilities .facilities-col img{
+        height: 180px;
+        width: 270px;
+    } 
+}
+@media(max-width: 700px) {
+#facilities .facilities-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0; 
+}
+#facilities .facilities-col img{
+    height: 200px;
+    width: 330px;
+}
+#facilities .facilities-col h3{
+    padding-top: 7px;
+}
+#facilities .facilities-col p{
+    padding-top:0 ;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
+}
+@media(max-width: 430px){
+    #facilities .facilities-col img{
+        height: 150px;
+        width: 260px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------riview---------*/
+#student{
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+#student h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 11px;
+}
+#student p{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#student .review{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+#student .review .openione{
+    width: 530px;
+    height: 170px;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 20px;
+}
+#student .review .openione img{
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 14px;
+    margin-left: 20px;
+}
+.cmnt{
+    margin-left: 22px;
+}
+#student .review .openione p{
+    font-size: 13px;
+    padding-top:27px ;
+    padding-bottom: 10px;
+    text-align: left;
+}
+#student .review .openione h2{
+    text-align: left;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 0;
+}
+
+/*----media queary---*/
+@media(max-width: 1150px){
+    #student .review{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #student .review .openione{
+        margin: 10px 0;
+    }
+}
+@media(max-width: 700px) {
+    #student h2{
+        font-size: 30px;
+    }
+#student .review{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin-top: 24px;
+}
+#student .review .openione{
+    width: 390px;
+    height: 200px;
+    margin-bottom: 18px;
+}
+}
+@media(max-width: 450px){
+    #student .review .openione{
+        width: 300px;
+        height: 230px;
+        margin-bottom: 18px;
+    } 
+}
+
+
+
+
+/*---------contact------*/
+
+.cto{
+    margin: 100px auto ;
+    width: 80%;
+    background-image:linear-gradient( rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("eduford_img/banner2.jpg");
+    background-position: center;              /*--how put 1 after anether(h1 on bckground)--*/
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+.cto h1{
+    color: #fff;
+    margin-bottom: 40px;
+}
+.cto a{
+    padding: 12px 16px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.cto a:hover{
+    background-color: #f44336;
+    border: 2px solid #f44336;
+}
+
+/*--media queary---*/
+@media(max-width: 650px){
+    .cto{
+        width: 100%;
+    }
+}
+@media(max-width: 700px){
+    .cto h1{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*--------about--------*/
+.about{
+    margin-top: 20px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.about .fab{
+    margin: 16px 16px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border-radius: 3px;
+}
+.fa-facebook-square{
+    background: #3b5998;
+    color: #fff;
+    border: 1px solid #3b5998 ;
+}
+.fa-twitter-square{
+background: #55ACEE;
+color: #fff;
+border: 1px solid #55ACEE;
+}
+.fa-instagram-square{
+    background: #125688;
+    color: #fff;
+    border: 1px solid #125688 ;
+}
+.about h2{
+    font-size: 26px;
+    color:black;
+    padding-bottom: 37px;
+    text-align: center;
+
+}
+.about p{
+    text-align: center;
+    font-size: 18px;
+
+}
+
+
+
+/*-----------------footer---------------------*/
+footer{
+    width: 100%;
+    position: ;
+    bottom:0 ;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px 0;
+    border-top-left-radius: 125px;
+}
+.row{
+    width:80% ;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 20px;
+    font-size: 13px;
+}
+.col{
+    flex-basis: 27%;
+    padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.col h2{
+    margin-bottom: 40px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.mail{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 17px 0;
+}
+
+.col ul{
+    padding-left: 0;
+}
+.col li a{
+    text-decoration: none;
+    color: #fff;
+}
+.col li {
+    list-style: none; 
+    margin-bottom: 12px;
+}
+
+
+.col form{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    display: flex;
+    position: relative;
+}
+form input{
+    position: relative;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+    padding:0 16px;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+form button .fa{
+    font-size: 16px;
+    color: #ccc;
+}
+.fab{
+    margin-right: 13px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+hr{
+    width: 80%;
+    border: 0;
+    border-bottom:1px solid #ccc ;
+    margin:16px auto;
+    
+}
+
+.para{
+    margin-top: ;
+    text-align: center;
+}
+
+.underline{
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    background: #767676;
+    border-radius: 5px;
+    top: 25px;
+    overflow: hidden;
+}
+.underline span{
+    position: absolute;
+    width: 11px;
+    height: 100%;
+    border-radius: 5px;
+    background: #fff;
+    top: ;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+
+.for-bg #navbar{
+    height: 12vh;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+}
+
+
+
+
+/*----contact-form-----*/
+.h-contact{
+    text-align: center;
+    padding-bottom: 50px;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    background: #fff;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical ;
+    
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .containers {
+    
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  @media(max-width: 1230px){
+    .containers {
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+  }
+  @media(max-width: 750px){
+    .containers {
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+  }
+  @media(max-width: 400px){
+    .containers {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+  }

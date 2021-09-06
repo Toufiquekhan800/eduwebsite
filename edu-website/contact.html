@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="for-bg">
+        <nav id="navbar">
+            <div class="nav-collection">
+            <div class="logo">
+                <img src="eduford_img/logo.png" alt="">
+            </div>
+            <div class="openMenu">
+                <h1>Menu</h1>
+            </div>
+            <div class="right" id="right">
+                <i class="fa fa-times" onclick="hidemenu()" ></i>
+                <a href="index.html">HOME</a>
+                <a href="facilities.html">FACITETIES</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="contact.html">FEDBACK</a>
+            </div>
+            <div class="closeMenu">
+                <h1>close</h1>
+            </div>
+            
+        </div>
+        
+    </nav>
+    </header>
+
+
+    <div class="containers">
+        <form action="action_page.php">
+          <h1 class="h-contact">contact us</h1>
+          <label for="fname">First Name</label> <br>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label> <br>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label> <br>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Message</label> <br>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:120px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+             <!-- footer -->
+             <footer>
+                <div class="row">
+                    <div class="col" >
+                        <img src="eduford_img/logo.png" alt="" style="height: 60px;">
+                        <p>Lorem ipsum sit amet consectetur adipisicing 
+                             elit. Itaque nisi modi, distinctio at
+                              officiis similique repudiandae .</p>
+                    </div>
+                    <div class="col">
+                        <h3>officiis <div class="underline"><span></span></div> </h3>
+                        <p>ITPL Road</p>
+                        <p>morisak, kerala</p>
+                        <p>kerala, PIN-454545, India</p>
+                        <p class="mail">abcd1234@gmail.com</p>
+                        <h4>+91  0123456789</h4>
+                    </div>
+                    <div class="col">
+                        <h3>links <div class="underline"><span></span></div> </h3>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="facilities.html"></a>facilities</li>
+                            <li><a href=""></a>Product</li>
+                            <li><a href=""></a>About</li>
+                            <li><a href="contact.html"></a>Contact</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Newsletter <div class="underline"><span></span></div></h3>
+                        <form action="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open-fill" viewBox="0 0 16 16">
+                                <path d="M8.941.435a2 2 0 0 0-1.882 0l-6 3.2A2 2 0 0 0 0 5.4v.313l6.709 3.933L8 8.928l1.291.717L16 5.715V5.4a2 2 0 0 0-1.059-1.765l-6-3.2zM16 6.873l-5.693 3.337L16 13.372v-6.5zm-.059 7.611L8 10.072.059 14.484A2 2 0 0 0 2 16h12a2 2 0 0 0 1.941-1.516zM0 13.373l5.693-3.163L0 6.873v6.5z"/>
+                              </svg>
+                            <input type="email" name="" placeholder="Enter your mail" id="">
+                            <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                              </svg></button>
+                        </form>
+                    </div>
+                    
+                </div>
+                <hr>
+                <p class=" para">Footer.2021.All Right Reserve</p>
+            </footer>
+
+            <script src="app.js"></script>
+</body>
+</html>
